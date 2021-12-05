@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quy Đổi Tiền </title>
+    <!-- main css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="py-5">
+            <div class="card" style="width: 18rem; border: solid 1px  green;">
+                <div class="card-header text-white bg-success text-center">
+                    Quy Đổi Tiền Tệ <br> USD sang VND
+                </div>
+                <div class="card-body">
+                    <form>
+                        <p>USD:</p>
+                        <div class="form-group">
+                            <input type="Number" class="form-control" id="inpUSD" placeholder="Số tiền USD muốn đổi ">
+                        </div>
+                        <div class="form-group">
+                            <p>VND:</p>
+                            <input type="text" disabled="disabled " class="form-control" id="inpVND"
+                                placeholder="23.500VNĐ">
+                        </div>
+                        <div class="text-center" style="padding-bottom: 10px;">
+                            <button type="button" onclick="quydoi()" class="btn btn-danger" id="btnCalc">Quy
+                                Đổi</button>
+                        </div>
+
+                        <p id="txtdoiDuoc" class="alert alert-success"></p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="py-5">
+            <div class="card" style="width: 18rem; border: solid 1px  green;">
+                <div class="card-header text-white bg-success text-center">
+                    Tính diện tích & chu vi <br> hình chữ nhật
+                </div>
+                <div class="card-body">
+                    <form>
+                        <p>Chiều Dài:</p>
+                        <div class="form-group">
+                            <input type="Number" class="form-control" id="inpchieuDai" placeholder="Chiều dài ">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Chiều Rộng:</label>
+                            <input type="Number" class="form-control" id="inpchieuRong" placeholder="Chiều Rộng">
+                        </div>
+                        <div class="text-center" style="padding-bottom: 10px;">
+                            <button type="button" onclick="chuVi()" class="btn btn-danger" id="btnCalc">Chu Vi</button>
+                            <button type="button" onclick="dienTich()" class="btn btn-danger" id="btnCalc">Diện
+                                Tích</button>
+                        </div>
+                        <div class="text-center" style="padding-bottom: 10px;">
+                        </div>
+
+                        <p id="tinhDuoc" class="alert alert-success"></p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="py-5">
+            <div class="card" style="width: 18rem; border: solid 1px  green;">
+                <div class="card-header text-white bg-success text-center">
+                    Tính tổng 2 ký số
+                </div>
+                <div class="card-body">
+                    <form>
+                        <p>Số có 2 chữ số:</p>
+                        <div class="form-group">
+                            <input type="Number" class="form-control" id="inpNumber" placeholder="Số có 2 chữ số">
+                        </div>
+
+                        <div class="text-center" style="padding-bottom: 10px;">
+                            <button type="button" onclick=" ocTong()" class="btn btn-danger" id="btnCalc"> Tổng </button>
+
+                        </div>
+                        <div class="text-center" style="padding-bottom: 10px;">
+                        </div>
+
+                        <p id="pTong" class="alert alert-success"></p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main CSS -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
